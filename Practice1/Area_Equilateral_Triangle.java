@@ -1,3 +1,5 @@
+package Practice1;
+
 import java.util.Scanner;
 
 public class Area_Equilateral_Triangle {
