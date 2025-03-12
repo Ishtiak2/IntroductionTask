@@ -25,7 +25,6 @@ class Restaurant {
 
 class FastFoodRestaurant extends Restaurant {
     FastFoodRestaurant(String name,double foodPrice) {
-//        this.name = name;
         super(name,foodPrice);
     }
 
@@ -45,6 +44,12 @@ class FineDiningRestaurant extends Restaurant {
     FineDiningRestaurant(String name, double foodPrice) {
         super(name,foodPrice);
     }
+    @Override
+    double calculateTotalBill() {
+        double tax = foodPrice * 0.10;
+        return foodPrice + tax;
+    }
+
     @Override
     int estimateDeliveryTime() {
         return 60;
