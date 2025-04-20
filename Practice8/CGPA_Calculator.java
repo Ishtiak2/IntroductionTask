@@ -1,6 +1,6 @@
 package Practice8;
 
-public class CGPACalculator {
+public class CGPA_Calculator {
     public static void main(String[] args){
         int numStudents = 5;
         int numSubjects = 5;
